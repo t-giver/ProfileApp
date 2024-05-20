@@ -13,6 +13,11 @@
 		B32E90492BF59919001DF375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32E90472BF59919001DF375 /* Main.storyboard */; };
 		B32E904B2BF5991A001DF375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32E904A2BF5991A001DF375 /* Assets.xcassets */; };
 		B32E904E2BF5991A001DF375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32E904C2BF5991A001DF375 /* LaunchScreen.storyboard */; };
+		B3405C0A2BFB2E250019D30D /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405C092BFB2E250019D30D /* HobbyViewController.swift */; };
+		B36641542BFB11EB0099C67A /* ConfirmationInquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36641532BFB11EB0099C67A /* ConfirmationInquiryViewController.swift */; };
+		B36641562BFB12340099C67A /* ompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36641552BFB12340099C67A /* ompletionViewController.swift */; };
+		B36641582BFB128B0099C67A /* CompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36641572BFB128B0099C67A /* CompletionViewController.swift */; };
+		B3B7C43B2BFB106100FA7BF4 /* InquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7C43A2BFB106100FA7BF4 /* InquiryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B32E904A2BF5991A001DF375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32E904D2BF5991A001DF375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B32E904F2BF5991A001DF375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3405C092BFB2E250019D30D /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		B36641532BFB11EB0099C67A /* ConfirmationInquiryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationInquiryViewController.swift; sourceTree = "<group>"; };
+		B36641552BFB12340099C67A /* ompletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ompletionViewController.swift; sourceTree = "<group>"; };
+		B36641572BFB128B0099C67A /* CompletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionViewController.swift; sourceTree = "<group>"; };
+		B3B7C43A2BFB106100FA7BF4 /* InquiryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +69,12 @@
 				B32E90412BF59919001DF375 /* AppDelegate.swift */,
 				B32E90432BF59919001DF375 /* SceneDelegate.swift */,
 				B32E90452BF59919001DF375 /* ViewController.swift */,
+				B36641572BFB128B0099C67A /* CompletionViewController.swift */,
+				B36641552BFB12340099C67A /* ompletionViewController.swift */,
+				B36641532BFB11EB0099C67A /* ConfirmationInquiryViewController.swift */,
+				B3B7C43A2BFB106100FA7BF4 /* InquiryViewController.swift */,
 				B32E90472BF59919001DF375 /* Main.storyboard */,
+				B3405C092BFB2E250019D30D /* HobbyViewController.swift */,
 				B32E904C2BF5991A001DF375 /* LaunchScreen.storyboard */,
 				B32E904A2BF5991A001DF375 /* Assets.xcassets */,
 				B32E904F2BF5991A001DF375 /* Info.plist */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36641562BFB12340099C67A /* ompletionViewController.swift in Sources */,
 				B32E90462BF59919001DF375 /* ViewController.swift in Sources */,
+				B36641582BFB128B0099C67A /* CompletionViewController.swift in Sources */,
 				B32E90422BF59919001DF375 /* AppDelegate.swift in Sources */,
+				B3B7C43B2BFB106100FA7BF4 /* InquiryViewController.swift in Sources */,
 				B32E90442BF59919001DF375 /* SceneDelegate.swift in Sources */,
+				B36641542BFB11EB0099C67A /* ConfirmationInquiryViewController.swift in Sources */,
+				B3405C0A2BFB2E250019D30D /* HobbyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

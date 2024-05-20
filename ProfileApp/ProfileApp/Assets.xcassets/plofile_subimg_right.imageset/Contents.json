@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "FB_IMG_1590580290571 (1).jpg",
+      "filename" : "Rectangle 10plofile_subimg_right.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Rectangle 10plofile_subimg_right@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Rectangle 10plofile_subimg_right@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
