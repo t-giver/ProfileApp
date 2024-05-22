@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Rectangle 9plofile_subimg_left.png",
+      "filename" : "IMG_20200609_214806_271.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Rectangle 9plofile_subimg_left@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Rectangle 9plofile_subimg_left@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "PXL_20230601_053049376.PORTRAIT.jpg",
+      "filename" : "Rectangle 16Hobby_sub2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Rectangle 16Hobby_sub2@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Rectangle 16Hobby_sub2@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

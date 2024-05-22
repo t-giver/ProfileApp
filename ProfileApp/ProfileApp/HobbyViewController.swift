@@ -8,51 +8,54 @@
 import UIKit
 
 class HobbyViewController: UIViewController {
-    @IBOutlet weak var hobby_img1: UIImageView!
-    @IBOutlet weak var hobby_img2: UIImageView!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var dispImageNo = 0   //初期値を設定。　かつ表示させる番号をvarで可変設定
+    //配列を使って、アセッツに登録している写真のファイル名を設定する
+    var imageNameArray = [
+        "Hobby_mainimg_1",
+        "Hobby_mainimg_2",
+        "Hobby_mainimg_3",
+        "Hobby_mainimg_4",
+        "Hobby_mainimg_5"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        
-        if let image1 = UIImage(named: "image1"),
-           let image2 = UIImage(named: "image2") {
-            hobby_img1.animationImages = [image1, image2]
-            hobby_img2.animationImages = [image1, image2]
+        let imagename = imageNameArray[dispImageNo]    //配列の[初期値]をimagenameを代入
+        if let image = UIImage(named: imagename){       //UIImageに（namedに記述されたファイル）を表示させるコード。今回は初期値を代入した
             
-            // アニメーションの設定
-            hobby_img1.animationDuration = 1.0 // 1秒間で1回のアニメーション
-            hobby_img1.animationRepeatCount = 0 // 無限にループ
-            
-            hobby_img2.animationDuration = 1.0
-            hobby_img2.animationRepeatCount = 0
-            
-            // アニメーションの開始
-            hobby_img1.startAnimating()
-            hobby_img2.startAnimating()
+            imageView.image = image                     //imagenameを使用。ifはもしバグで読み込めなくてもアプリを落とさないため。そしてimageViewのimageに、配列の初期値に設定したimage(UIImage)を表示
         }
-        
-        
+    }
+    
+    func displayImage() {
+        // dispImageNoが有効な範囲内か確認
+        if dispImageNo < 0 {
+            dispImageNo = imageNameArray.count - 1
+        } else if dispImageNo >= imageNameArray.count {
+            dispImageNo = 0
+        }
+        let name = imageNameArray[dispImageNo]
+        let image = UIImage(named: name)
+        imageView.image = image
+        if let newImage = UIImage(named: name) {
+            // アニメーションブロックを使用して画像の変更をアニメーション化
+            UIView.transition(with: imageView, duration: 0.5, options: [.transitionCrossDissolve], animations: {
+                self.imageView.image = newImage
+            }, completion: nil)
+        }
     }
     
     @IBAction func prevButton(_ sender: Any) {
-        UIView.animate(withDuration: 0.5, animations: {
-            self.hobby_img1.frame.origin.x -= self.view.frame.width
-            self.hobby_img2.frame.origin.x -= self.view.frame.width
-        }) { _ in
-            self.hobby_img1.frame.origin.x = self.view.frame.width
-            self.hobby_img2.frame.origin.x = self.view.frame.width
-        }
+        dispImageNo -= 1
+        displayImage()
     }
     
     @IBAction func nextButton(_ sender: Any) {
-        UIView.animate(withDuration: 0.5, animations: {
-            self.hobby_img1.frame.origin.x += self.view.frame.width
-            self.hobby_img2.frame.origin.x += self.view.frame.width
-        }) { _ in
-            self.hobby_img1.frame.origin.x = 0
-            self.hobby_img2.frame.origin.x = 0
-        }
+        dispImageNo += 1
+        displayImage()
     }
 }
