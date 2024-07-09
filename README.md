@@ -37,3 +37,8 @@ Tab Bar Controllerを使用し画面が切り替わる。
    →質問をし、ヒントを得たり、AIの使用やGoogleでたくさんのサイトを調査し対処。
 - 途中、ナビゲーションコントローラに不具合が起き、改善することに時間を要した。<br>
    →解決が難航。一部作り直しをすることで改善。
+
+## GIF
+<br>
+![Simulator Screen Recording - iPhone 14 Pro - 2024-07-09 at 17 26 41](https://github.com/t-giver/ProfileApp/assets/168057252/78192eef-3a84-4e86-906f-4cef74a2d606)
+
