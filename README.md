@@ -39,6 +39,5 @@ Tab Bar Controllerを使用し画面が切り替わる。
    →解決が難航。一部作り直しをすることで改善。
 
 ## GIF
-<br>
 ![Simulator Screen Recording - iPhone 14 Pro - 2024-07-09 at 17 26 41](https://github.com/t-giver/ProfileApp/assets/168057252/78192eef-3a84-4e86-906f-4cef74a2d606)
 
