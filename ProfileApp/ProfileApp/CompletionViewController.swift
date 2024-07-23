@@ -8,21 +8,16 @@
 import UIKit
 
 class CompletionViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
-    
     
     @IBAction func topButton(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
-        }
-        
     }
-    
-   
+}
+
+
 
 

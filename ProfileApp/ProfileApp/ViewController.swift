@@ -11,8 +11,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+       splash()
+    }
+    
+    func splash(){
         let splashImage = UIImage(named: "splash_img")
         let splashImageView = UIImageView(image: splashImage)
         splashImageView.frame = self.view.bounds
@@ -25,7 +27,6 @@ class ViewController: UIViewController {
         }
         splashImageView.contentMode = .scaleAspectFit
     }
-    
     
 }
 

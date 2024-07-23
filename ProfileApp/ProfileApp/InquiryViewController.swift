@@ -13,15 +13,12 @@ class InquiryViewController: UIViewController,  UITextFieldDelegate {
     @IBOutlet weak var inquiryText: UITextField!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
         nameText.delegate = self
         mailText.delegate = self
         inquiryText.delegate = self
-        
         // タップジェスチャーを追加して、背景をタップした時にキーボードを閉じる
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
@@ -39,13 +36,6 @@ class InquiryViewController: UIViewController,  UITextFieldDelegate {
     @IBAction func actionButton(_ sender: Any) {
         dismissKeyboard() // ボタンを押した時にもキーボードを閉じる
     }
-    
-    
-    
-    
-    
-    //    @IBAction func actionButton(_ sender: Any) {
-    //    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let confirmationInquiryViewController = segue.destination as? ConfirmationInquiryViewController {
